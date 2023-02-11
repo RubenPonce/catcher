@@ -6,7 +6,9 @@ export const GET_CHANNELS = gql`
       name
       mediaProvider
       channelId
+      isLive
       lastLive
+      lastUrl
       __typename
     }
   }

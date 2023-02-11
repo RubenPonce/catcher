@@ -9,7 +9,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloProvider } from "@apollo/react-hooks";
 //@ts-ignore
 const httpLink = new createHttpLink({
-  uri: "http://localhost:4000",
+  uri: process.env.REACT_APP_GRAPH_ENDPOINT,
 });
 const client = new ApolloClient({
   link: httpLink,
